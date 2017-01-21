@@ -1,7 +1,7 @@
 version: '2'
 services:
     php:
-        image: hideaki:phper-na-13
+        image: hideaki/phper-na-13:latest
         expose:
             - '9000'
         ports:
