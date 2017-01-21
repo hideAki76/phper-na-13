@@ -18,5 +18,5 @@
 ## docker container
     container$ ./bin/server.sh
 
-## brawser
+## browser
 http://localhost:9000/
