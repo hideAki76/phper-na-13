@@ -9,7 +9,7 @@
     phper
 
 ## docker container #1
-    container$ composer create-project torounit/composer-wp-dev-kit
+    container$ composer create-project torounit/composer-wp-dev-kit .
     container$ exit
 
 ## local #2
