@@ -9,16 +9,18 @@
     phper
 
 ## docker container #1
-    container$ composer create-project torounit/composer-wp-dev-kit .
+    container$ git clone https://github.com/torounit/composer-wp-dev-kit.git
     container$ exit
 
 ## local #2
-    $ cp local-config.json www/
-    $ cp provision.sh www/bin/
-    $ cp server.sh www/bin/
+    $ cp local-config.json www/composer-wp-dev-kit/
+    $ cp provision.sh www/composer-wp-dev-kit/bin/
+    $ cp server.sh www/composer-wp-dev-kit/bin/
     $ docker exec -it wordpress_php_1 /bin/bash -c 'su - phper'
 
 ## docker container #2
+    container$ cd composer-wp-dev-kit
+    container$ composer install
     container$ composer provision
     container$ ./bin/server.sh
 
