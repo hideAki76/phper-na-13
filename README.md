@@ -14,8 +14,6 @@
 
 ## local #2
     $ cp local-config.json www/composer-wp-dev-kit/
-    $ cp provision.sh www/composer-wp-dev-kit/bin/
-    $ cp server.sh www/composer-wp-dev-kit/bin/
     $ docker exec -it wordpress_php_1 /bin/bash -c 'su - phper'
 
 ## docker container #2
