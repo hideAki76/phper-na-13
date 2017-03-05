@@ -2,10 +2,8 @@ version: '2'
 services:
     php:
         image: hideaki/phper-na-13:latest
-        expose:
-            - '9000'
         ports:
-            - '9000:9000'
+            - "9000:9000"
         volumes:
             - ./www:/srv/www/
         command: bash -c "service mariadb restart;php -S 0.0.0.0:10000"
